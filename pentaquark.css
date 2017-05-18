@@ -1,0 +1,73 @@
+.card-area {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  /* display - flex? */
+  /* scale down when doesn't fit? */
+}
+
+.card-group {
+  display: flex;
+}
+
+.card-group .card+.card {
+  margin-left: -46px;
+  border-left-width: 2px;
+
+}
+
+.card {
+  height: 100px;
+  width: 62px;
+  border-radius: 3px;
+  border: 1px solid black;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  xxxtext-shadow: 1px 1px 2px white;
+  user-select: none;
+  xxxcursor: grab;
+  cursor: pointer;
+}
+
+.dragging .card {
+  cursor: pointer;
+}
+.dragging {
+  cursor: no-drop;
+}
+
+.card:hover {
+  border-color: #aa4;
+}
+
+.card.red {
+  background: #f88;
+}
+.card.blue {
+  background: #88f;
+}
+.card.green {
+  background: #8f8;
+}
+.card.red.anti {
+  background-image: repeating-linear-gradient(45deg, #f88, #f88 7%, #6ff 10%);
+}
+.card.blue.anti {
+  background-image: repeating-linear-gradient(45deg, #88f, #88f 7%, #ff6 10%);
+}
+.card.green.anti {
+  background-image: repeating-linear-gradient(45deg, #8f8, #8f8 7%, #f6f 10%);
+}
+
+.card .index {
+  position: absolute;
+  top: 2px;
+  left: 5px;
+  xbackground-image: radial-gradient(circle 20px, rgba(255,255,255,0.6), transparent);
+}
+.card .body {
+  font-size: 200%;
+}
