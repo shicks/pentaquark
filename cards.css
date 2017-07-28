@@ -91,13 +91,13 @@ body.dragging * {
 .card.green {
   background: #8f8;
 }
-.card.red.anti {
+.card.cyan { /* antired */
   background-image: repeating-linear-gradient(45deg, #f88, #f88 7%, #6ff 10%);
 }
-.card.blue.anti {
+.card.yellow { /* antiblue */
   background-image: repeating-linear-gradient(45deg, #88f, #88f 7%, #ff6 10%);
 }
-.card.green.anti {
+.card.magenta { /* antigreen */
   background-image: repeating-linear-gradient(45deg, #8f8, #8f8 7%, #f6f 10%);
 }
 
